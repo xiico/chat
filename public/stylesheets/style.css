@@ -1,0 +1,251 @@
+        body {
+            background-image: -moz-linear-gradient(top, #a6f3fb, #b82afa);
+            background-image: -o-linear-gradient(top, #a6f3fb, #b82afa);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#a6f3fb), to(#b82afa));
+            background-image: -webkit-linear-gradient(top, #a6f3fb, #b82afa);
+            background-image: linear-gradient(to bottom, #a6f3fb, #b82afa);
+            /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+        }
+
+        .divExternal {
+            width: 450px;
+            margin: auto;
+        }
+        .bf {
+            border-style: solid;
+            display: inline-block;
+            border-radius: 5px;
+            background: -moz-radial-gradient(center, ellipse cover, #f7f2da 0%, #d01341 100%);
+            background: -o-radial-gradient(center, ellipse cover, #f7f2da 0%, #d01341 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7f2da), color-stop(100%, #d01341));
+            background: -webkit-radial-gradient(center, ellipse cover, #f7f2da 0%, #d01341 100%);
+            background: -ms-radial-gradient(center, ellipse cover, #f7f2da 0%, #d01341 100%);
+        }
+
+        .infoPanel {
+            float: right;
+            border-style: solid;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .infoBox {
+            height: 140px;
+            border-style: solid;
+            align-content: center;
+            padding: 1px;
+            background-image: -moz-linear-gradient(top, #ffffff, #99f3ff);
+            background-image: -o-linear-gradient(top, #ffffff, #99f3ff);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#99f3ff));
+            background-image: -webkit-linear-gradient(top, #ffffff, #99f3ff);
+            background-image: linear-gradient(to bottom, #ffffff, #99f3ff);
+        }
+         
+        .chatBox {
+            border-style: solid;
+            height: 113px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .inputSendChat {
+            width: 98%;
+        }
+
+        .pickTroops tr td {
+            border: 2px solid black;
+            font-family: 'Lucida Console';
+            font-weight: bold;
+            text-align: center;
+            cursor: default;
+            width:20px;
+            height:20px;
+        }
+
+        .pickTroops {
+            width: 100%;
+            height: 50px;
+            top: 120px;
+        }
+        .divStart{
+            position:relative;
+            align-content:center;
+        }
+        .start {
+            position: absolute;
+            top: 170px;
+            left: 60px;
+            width: 70px;
+            height: 44px;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .divName {
+            /*position: absolute;*/
+            padding-top:120px;
+            display:inline-block;
+        }
+
+        .divTroops {
+            /*display: table-cell;*/
+            vertical-align: bottom;
+        }
+        
+        .animalInfo {
+            font-family: Arial;
+            font-size: 10px;
+        }
+
+        .connInfo{
+            font-family: Arial;
+            font-size: 10px;
+        }
+
+        .connStatusG{
+            font-family: Arial;
+            font-size: 10px;
+            color:green;
+        }
+        .connStatusR{
+            font-family: Arial;
+            font-size: 10px;   
+            color:red;         
+        }
+        .connStatus{
+            font-family: Arial;
+            font-size: 10px;
+            color:blue;
+        }
+
+        .divInfo{
+            height:38px;
+        }
+        
+        #matchInfo{
+            font-family: Arial;
+            font-size: 10px;
+            color:blue;
+        }
+
+        .joinCreateSession{
+            padding-top: 70px;
+            display:inline-block;
+        }
+
+        .listSession{
+            width:160px;
+            text-align:center;
+        }
+        .sessionName{
+            /*top: 14px;
+            left: 14px;
+            width:240px;
+            height:420px;
+            background-color:red;*/        
+            position:absolute;
+            top:11px;
+            display:block;
+        }
+
+        .sessionNameIntern {
+            position: absolute;
+            background-color: white;
+            top: 40%;
+            left: 6%;
+            width: 85%;
+            height: 55px;
+            border: solid;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .chatName{
+            font-weight:bold;
+        }
+        .divBlockMove{
+            position:absolute;
+            top:11px;
+            display:block;          
+        }
+        .typeSelector{
+            width:100%;
+            height:100%;
+            padding:0px;      
+            border:0px;      
+        }
+        .divNames {
+            text-align: center;
+            float: left;
+            width: 42%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            font-family:Calibri;
+            font-weight: 600;
+            color: darkblue;
+        }
+        .divVs{
+            float: left;
+            width: 16%;
+            text-align: center;
+            font-weight:bolder;
+        }
+        
+        .sessionStatus {
+            text-align: center;
+            font-size: 12px;
+            font-weight:bold;
+            padding: 0px;
+            margin: 0px;
+            width:100%;
+        }
+
+        .typeSelectorSelected{
+            font-weight:bolder;
+            color:blue;
+        }
+
+        #txtSessionName{
+            width:80%;
+            text-align:center;
+        }
+
+        #txtName{
+            text-align:center;
+            width:80%;
+        }
+
+        @media only screen and (max-width: 525px) {
+            .divExternal {
+                /*width: 56%;*/
+                width: 71%;
+                margin: auto;
+                top: 60px;
+            }
+
+            .infoPanel {
+                float: right;
+                border-style: solid;
+                width: 98%;
+                /*margin-top:50px;*/
+            }
+
+            .start {
+                position: absolute;
+                top: 230px;
+                left: 80px;
+                width: 96px;
+                height: 50px;
+                font-weight: bold;
+            }
+
+            .joinCreateSession {
+                padding-top: 120px;
+                display: inline-block;
+            }
+            
+            .pickTroops tr td{
+                width: 27px;
+            }
+        }   

@@ -1,0 +1,62 @@
+extends layout
+ 
+
+block content
+  div(class="divExternal")
+    div(id="content" class="bf")
+      div(class="divStart")
+        input(type="button" id="start" value="GO" class="start" onclick="startMatch()")
+        input(type="button" id="endMatch" value="OK" class="start" onclick="resetState()")
+      div(align="center" id="divName" class="divName")
+        span Name
+        br
+        input(type="text" name="name" maxlength="12" id="txtName" onkeydown="chooseName(event, this);")
+      div(align="center" id="divJoinCreateSession" class="joinCreateSession")
+        select(id="lstSessions" size="8" class="listSession")
+          option(value="value") text
+        br
+        input(type="button" id="btnCreateSession" value="Create" onclick="joinOrCreateSession('C');")
+        input(type="button" id="btnJoinSession" value="Join" onclick="joinOrCreateSession('J')")
+        input(type="button" id="btnUpdate" value="Update" onclick="joinOrCreateSession();")
+      div(align="center" id="sessionName" class="sessionName")
+        div(class="sessionNameIntern")
+          span Session Name
+          br
+          input(type="text" id="txtSessionName" maxlength="12" onkeydown="sessionNameChosen(event,this)")
+      canvas(id="bf" width="80" height="160" onclick="showTileInfo(event)")
+      div(class="divBlockMove" id="divBlockMove")
+    div(class="infoPanel")
+      div(class="infoBox")
+        div(class="divTroops")
+          table(id="tblTroops" class="pickTroops" cellpadding="0" cellspacing="0")
+            tr
+              each val in [0,0,0,0,0,0,0,0]
+                td=val
+            tr
+              each val in ["R","C","D","M","W","L","T","F"]
+                td
+                  input(type="button" data-selected="false" class="typeSelector" value=val onclick="pickClick(this);")
+        div(style="height:60px;")
+          span(id="tileInfo") [00][00]&nbsp;
+          span(class="connInfo") Conn Status: 
+          span(id="connStatus" class="connStatus")
+          span(id="mainStatus" class="connStatus")
+          br
+          div(id="animalInfo" class="divInfo")
+            span(class="animalInfo") Animal info
+            br
+          div
+            div(class="divNames")
+              span(id="pName") ?
+            div(class="divVs") Vs
+            div(class="divNames")
+              span(id="pOpponent") ?
+          br
+          div(class="sessionStatus")
+            span(id="sessionStatus")
+          br
+          span(id="matchInfo" class="divInfo")
+          span(id="msg")
+      div(id="divChat" class="chatBox")
+      input(class="inputSendChat" maxlength="320" type="text" name="msg" value=" " onkeydown="sendChat(event,this);")
+  script(src='/javascripts/script.js')

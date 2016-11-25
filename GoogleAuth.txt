@@ -1,0 +1,10 @@
+
+clientID:
+793093289729-srjohubuetahid14i532s5il86slmp0m.apps.googleusercontent.com
+
+client secret:
+KsxgA6KdMUz1ginexbTrNgwy
+
+
+API key:
+AIzaSyAi-XQPNSN0f9oiYtY4rs0Fqr64CXUH_Po
