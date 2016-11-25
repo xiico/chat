@@ -59,7 +59,7 @@ var troops = new Array(8);
 var tnames = "RCDMWLTF";
 var tvalues = "83322141";
 var powers = "13427a00";
-var descriptions = ["Can move several spaces.", "Meow?", "Man's best friend", "Can disarm traps", "Howling in the night.", "Long live the king!", "It's a trap!", "If you lose it, you will die"];
+var descriptions = ["Can move several spaces.", "Meow?", "Man's best friend", "Can disarm traps", "Howling in the night.", "Long live the king!", "It's a trap!", "If you lose it, it's over!"];
 
 txtName.focus();
 for (var i = 0; i < 8; i++) {
