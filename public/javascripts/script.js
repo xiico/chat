@@ -412,7 +412,7 @@ function main() {
     }
 
     count++;
-    mainStatus.textContent = count;
+    //mainStatus.textContent = count;
     window.requestAnimationFrame(main);
 }
 window.requestAnimationFrame(main);
